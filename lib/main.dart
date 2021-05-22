@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_1/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,14 +12,6 @@ class MyApp extends StatelessWidget {
     String name = "Surabhil";
     double pi = 3.14;
     //use num for both int and double or var for any variable
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text('Hello to $days Challenge by $name'),
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(home: HomePage());
   }
 }
