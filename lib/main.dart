@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:learning_1/screen/home_page.dart';
 import 'package:learning_1/screen/login_page.dart';
 
@@ -15,9 +16,12 @@ class MyApp extends StatelessWidget {
     //use num for both int and double or var for any variable
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/home",
+      initialRoute: "/",
       routes: {"/": (context) => Login(), "/home": (context) => HomePage()},
     );
   }
